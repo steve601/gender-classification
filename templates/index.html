@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <style>
+            h1{
+                text-align: center;
+            }
+            form{
+                padding-left: 450px
+            }
+            .rec{
+                padding-left:450px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>GENDER CLASSIFICATION</h1>
+            <form action="/detect" method='POST' enctype = 'multipart/form-data'>
+                <h2>Upload an image file of the person to recognize the gender</h2>
+                <div class="content">
+                    <input type="file" name="imag" id="imag" accept="image/*" value="{{ request.form.fruit if request.form else '' }}" required>
+                </div><br>
+                <div class="btn">
+                    <button type = 'submit'>Classify</button>
+                </div>
+            </form><br>
+            <div class='rec'>
+                {% if text %}
+                <img src = "{{img_path}}" height = '350px' width='350px'>
+                 <h2>{{text}}</h2>
+                {% endif %}
+            </div>
+    </body>
+</html>

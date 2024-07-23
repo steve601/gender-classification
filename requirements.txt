@@ -1,0 +1,6 @@
+tensorflow
+pandas 
+seaborn 
+numpy
+matplotlib
+flask
