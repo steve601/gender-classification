@@ -1,8 +1,8 @@
-# Brain Tumor Classification
+# Gender Classification
 
 ## Project Overview
 
-The goal of the Brain tumor Classification project is to build a model capable of accurately classifying images of MRI scan into predefined condition categories.
+The goal of this project is to classify images of humans into male or female.
 
 **Prerequisites**
 
@@ -16,7 +16,7 @@ The goal of the Brain tumor Classification project is to build a model capable o
 
 **1.Clone the repo**
 ```
-git clone https://github.com/steve601/brain-tumor-disease-classification.git
+git clone https://github.com/steve601/gender-classification.git
 ```
 
 **2.Create venv**
